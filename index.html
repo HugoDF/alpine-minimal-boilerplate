@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Alpine.js Minimal Boilerplate</title>
@@ -7,15 +8,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#fafafa">
   <!-- empty favicon -->
-  <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+  <link
+    href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII="
+    rel="icon" type="image/x-icon" />
 
   <script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
   <!-- for IE11 support -->
   <script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine-ie11.min.js" defer></script>
+  <style>
+    html {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      line-height: 1.5;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    a {
+      color: #4299e1;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+      text-decoration: underline;
+      color: #2c5282;
+    }
+
+    #app {
+      max-width: 400px;
+      margin: auto;
+    }
+    img {
+      margin: auto;
+      display: flex;
+    }
+  </style>
 </head>
+
 <body>
-  <div x-data="{ count: 0 }">
-    <p>Count: <span x-text="count"></span></p>
-    <button @click="count++">Increment</button>
+  <div id="app" x-data="{ msg: 'Welcome to your Alpine.js app' }">
+    <img src="./assets/logo.jpg">
+    <h1 x-text="msg"></h1>
+    <h2>Essential Links</h2>
+    <ul>
+      <li><a href="https://github.com/alpinejs/alpine#readme" target="_blank" rel="noopener noreferrer">Docs</a></li>
+      <li><a href="https://github.com/alpinejs/alpine/discussions" target="_blank"
+          rel="noopener noreferrer">Discussions</a></li>
+      <li><a href="https://alpinejs.codewithhugo.com/chat" target="_blank" rel="noopener noreferrer">Community
+          Discord</a></li>
+    </ul>
+    <h2>Ecosystem</h2>
+    <ul>
+      <li><a href="https://github.com/alpinejs/awesome-alpine" target="_blank"
+          rel="noopener noreferrer">awesome-alpine</a></li>
+      <li><a href="http://github.com/ryangjchandler/spruce" target="_blank" rel="noopener noreferrer">Spruce</a> - state management</li>
+      <li><a href="http://github.com/shatstack/stylenames" target="_blank" rel="noopener noreferrer">stylenames</a> - join inline styles</li>
+    </ul>
   </div>
 </body>
