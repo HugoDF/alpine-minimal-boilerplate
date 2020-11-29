@@ -4,7 +4,7 @@ The minimal setup required to run Alpine.js.
 
 ## Setup
 
-1. Clone the repository
+1. Clone the repository or click the "use template" button
 2. Open [./index.html](./index.html)
 
 ## LICENSE
